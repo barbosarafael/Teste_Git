@@ -1,6 +1,6 @@
 ---
 title: "Teste"
-author: "Rodrigo Almeida Figueira"
+author: "Rodrigo Almeida Figueira & Rafael Barbosa da Silva"
 date: "9/12/2020"
 output: html_document
 ---
