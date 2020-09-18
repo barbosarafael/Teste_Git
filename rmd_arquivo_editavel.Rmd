@@ -1,0 +1,119 @@
+---
+title: "TurnOver v2"
+author: "**Autores:** Rodrigo Almeida & Rafael Barbosa | **Data:** "
+date: "06/04/2020"
+output: 
+  rmarkdown::github_document:
+  theme: united
+  code_folding: hide
+always_allow_html: true
+---
+
+![Image of Yaktocat](https://www.nvoip.com.br/wp-content/uploads/2018/09/turnover_face.png)
+
+
+```{r setup, include = FALSE}
+
+knitr::opts_chunk$set(fig.width = 8, fig.height = 4,
+                      echo = TRUE, warning = FALSE,
+                      message = FALSE, fig.align = "center")
+
+```
+
+
+## 1. Introdução ao TurnOver
+
+- O Tunover é nada mais do que a taxa de rotatividade dos funcionários de uma empresa. Mede o percentual de desligamento em um determinado período de tempo, geralmente fechado em períodos anuais. Este tipo de análise não mede só e unicamente o número bruto de desligamentos, e sim traz o intuito de explorar a fundo quais os fatores que influenciam neste processo.
+
+- Através de variáveis operacionais e indicadores da empresa, utilizam-se diversas ferramentas que vão desde análises estatísticas até técnicas de Machine Learning. Tudo isso engrandece a análise e traz mais credibilidade para se falar deste assunto.
+
+- Além de tudo isso, deve-se deixar claro alguns pontos relevantes para quem trabalha ou deseja trabalhar nesta vertente. Primeiro que o contato com outras áreas é fundamental para deixar a análise robusta e alinhada com o negócio que demanda a resolução: provável falar com gerentes, diretores, área de RH ou os Business Partiner dos setores da empresa. Segundo que esta vertente requer muita responsabilidade e princípio de confidencialidade, pois lida com informações completamente sensível, como salário, risco de desligamento por gestor, dentre outras.
+
+- Por fim, o Turnover já traz resultados expressivos atualmente. Diversas empresas enriqueceram as informações sobre seus colaboradores a fim de analisá-las e exeutarem ações para fazer acontecer uma coisa que, mesmo que óbvia, não era muito prticada: funcionário feliz traz bons resultados!
+
+## 2. Entendimento do problema
+
+- Neste exemplo de causa, nós extraímos uma base de dados do portal Kaggle (completar as informações)!!!, em que trata-se de uma análise de turnover demissional, o que se volta mais na movimentação de desligamentos dos colaboradores. Com isso, temos as seguintes variáveis:
+
+- **stag**: experiência (em anos ou meses)
+- **event**: demitido ou não
+- **gender**: gênero
+- **age**: idade
+- **industry**: tipo de indústria
+- **profession**: setor em que trabalha
+- **traffic**: meio em que o candidato se candidatou
+- **coach**: presença de um **buddy**
+- **head_gender**: gênero do seu **buddy**
+- **greywage**: algo relacionado com taxas para o governo
+- **way**: meio de transporte para o trabalho
+- **extraversion**, **independ**, **selfcontrol**, **anxiety**, **novator**: Escala de teste Big5 
+
+
+## 3. R e Rstudio
+
+<p align="center">
+  <img alt="decision_tree" src="images/r_and_rstudio.png" alt="drawing" width="400" height="200"/>
+<br>
+<em> <span>Disponível <a href="https://bcrf.biochem.wisc.edu/all-tutorials/tutorial-materials-r-rstudio/">aqui</a></span> </em>
+</p>
+
+
+- Escrever algo aqui sobre o R e o Rstudio
+
+
+
+### 3.1. Pacotes utilizados
+
+
+```{r pacotes_utilizados}
+
+require(tidyverse)
+<<<<<<< HEAD
+require(kable)
+=======
+require(kableExtra)
+
+```
+
+### 3.2. Importação dos dados 
+
+- Para a importação de dados
+
+```{r dados}
+
+>>>>>>> 1618cb37131f34fd86a926314690c755c2030671
+
+dados <- read.csv(file = "data/turnover-data-set.csv")
+
+dados %>% 
+  head %>% 
+  kbl %>% 
+  kable_classic(full_width = T, html_font = "Arial") %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive", position = "center"))
+
+
+```
+
+
+## 4. Base de dados (estrutura)
+
+<p align="center">
+  <img alt="decision_tree" src="images/exploratory.jpg" alt="drawing" width="600" height="400"/>
+  <br>
+  <em> <span>Foto por <a href="https://unsplash.com/@marcobias?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Marco Biasibetti</a> em <a href="https://unsplash.com/s/photos/explorator?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> </em>
+</p>
+
+
+
+```{r}
+
+dados %>% 
+  glimpse
+
+```
+
+## 5. EDA
+
+## 6. Modelagem
+
+## 7. Predição
