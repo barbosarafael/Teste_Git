@@ -7,6 +7,9 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+require(tidyverse)
+
 ```
 
 ## R Markdown
@@ -28,3 +31,17 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+
+# Adicionando um novo plot
+
+```{r}
+
+cars %>% 
+  ggplot(data = .) +
+  geom_point(aes(x = speed, y = dist)) +
+  theme_minimal(14)
+
+```
+
